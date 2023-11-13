@@ -1,0 +1,59 @@
+@startuml
+class CommentController{
+    #doGet(request,response)
+    #doPost(request,response)
+    #doPut(request,response)
+    #doDelete(request,response)
+}
+class mapBoardController{
+    #doGet(request,response)
+    #doPost(request,response)
+    #doPut(request,response)
+    #doDelete(request,response)
+}
+class MemberFindController{
+    #doGet(request,response)
+    #doPost(request,response)
+    #doPut(request,response)
+    #doDelete(request,response)
+}
+class MemberInfoController{
+    #doGet(request,response)
+    #doPost(request,response)
+    #doPut(request,response)
+    #doDelete(request,response)
+}
+
+class BoardDao{
+    +boardWrite(BoardDto):boolean
+    +boardUpdate(BoardDto,mno):boolean
+    +boardGetList(pa,qa,ha,oa,cno,start,end):ArrayList<BoardDto>
+    +getPage(cno,nowpage,viewByPage,pa,qa,ha,oa):PageDto
+    +getCateList()ArrayList<CategoryDto>
+    +boardInfo(int bno):BoardDto 
+    +boardDelete(int bno,int mno) :boolean 
+    +exist(int bno) :boolean 
+}
+class CommentDao{
+    +:commentWrite()  : boolean
+    +:commentView() : BoardDto
+    +:commentDelete() : boolean
+}
+class MemberDao{
+    +:signup( MemberDto dto ) : boolean
+    +:login( String mid , String mpwd ) : boolean
+    +:findId(String memail) : String
+    +:findPw(String mid, String memail) : String
+    +:info( String mid ) : MemberDto
+    +:searchinfo( String mnickname ) : MemberDto
+    +:findIdOrEmail( String type , String data ) : boolean
+    +:mupdate( int mno , String mnickname , String mpwd) : boolean
+    +:mdelete( int mno , String mpwd ) : boolean
+}
+
+CommentDao <-- CommentController
+BoardDao <-- mapBoardController
+MemberDao <-- MemberFindController
+MemberDao <-- MemberInfoController
+
+@enduml

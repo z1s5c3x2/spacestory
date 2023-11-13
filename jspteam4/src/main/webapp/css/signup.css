@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* Style the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the webcontainer */
+.webcontainer {
+  background-color: #ffffff;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.titlehead{
+	
+	margin: 0 auto;
+}
+/* Style the form */
+.signupForm {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the form headings */
+.signupForm h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.signupForm p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Style the input fields */
+.intitle {
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Style the email input and button container */
+.emailbox {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"].memail {
+  flex: 1;
+}
+
+button.authReqBtn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 10px;
+    margin-bottom: 9px;
+}
+
+button.authReqBtn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Style the error messages */
+.idcheckbox,
+.pwcheckbox,
+.emailcheckbox,
+.nicknamecheckbox {
+  font-size: 14px;
+  color: #ff0000;
+  margin-top: 5px;
+}
+
+/* Style the signup button */
+.signupbtn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Style the header (assuming it's in header.jsp) */
+/* You can add more styles to customize it */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin: 0;
+}

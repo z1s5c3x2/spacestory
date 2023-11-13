@@ -1,0 +1,9 @@
+@startuml
+class MemberDto {
+	-mid:String	
+    -mpwd:String
+    -memail:String
+    //+MemberDto MemberDto()
+}
+
+@enduml

@@ -1,0 +1,454 @@
+.webcontainer2{
+	width: 550px	! important;
+	margin: 10px 0px;
+	position: absolute; 
+	z-index: 2;
+	top:190px;
+	right:0px;
+
+}
+.topcontainer{
+	display: flex;
+}
+.btn-primary{
+	position: absolute;
+	right: 0px;
+}
+
+/* 채팅전체구역 */
+.chatbox{  
+	width: 40%;	 margin: 20px auto; 
+	box-shadow: 0px 0px 3px red;
+	/* 구역 그림자 : x축 y축 그림자흐림정도 색상 */
+}
+/* 채팅내용 목록 */
+.chatcont{ 
+	height: 500px; 
+	width : 80%;
+	background-color: #A3D6EB ; padding: 20px;
+	/* 만약에 내용물이 구역보다 커졌을때 */
+	overflow-y: scroll; /* y축 스크롤 */
+}
+.manager{
+	background-color: #A3D6EB; ;
+	height: 500px;
+	border: solid 1px white;
+	width: 20%;
+	text-align: center;
+	
+}
+.user{
+	border-bottom:solid 1px white;
+}
+/* 채팅입력창 , 전송버튼 구역 */
+.chatbottom{  height: 50px; display: flex; width: 100%;}
+
+.chatbottom textarea { /* 채팅입력창*/
+	width: 80%;
+	border: 1px solid #e8e8e8;
+	padding: 15px; resize: none;
+	border-radius: 5px;
+}
+.chatbottom button{ /*  전송버튼 */ 
+	width: 20%;
+	border: none;
+	border-radius: 5px;
+	background-color:  yellow ; 
+	
+}
+/* ----------rgb(255, 255, 0)------------------------------------- */
+
+/* 메시지 내용 */
+.subcont{ display: flex; align-items: flex-end; }
+.date{  font-size: 10px; margin: 0px 5px; } /* 메시지 시간 */
+.content{  
+	padding: 10px; 
+	border-radius: 5px; 
+	max-width: 80%; /* 최대 가로사이즈 */
+}
+
+/* 보냈을때 = 오른쪽 배치 , 노랑색배경 */
+.rcont{ display: flex; justify-content: flex-end; margin: 10px 0px; }
+.rcont .content{ background-color: #FFEB33; }
+.rcont .subcont{ justify-content: flex-end; }
+
+/* 받을을떄 = 왼쪽 배치 , 흰색 배경 */
+.lcont{ display: flex; justify-content: flex-start; margin: 10px 0px; }
+.lcont .content{ background-color: #FFFFFF; }
+.lcont .subcont{ justify-content: flex-start; }
+
+.lcont .pimg{
+	width: 35px; height: 35px; border-radius: 50%;
+	margin-right: 8px;
+	
+}
+
+.alarm{ /* 알람 메시지 */
+	width : 70%; margin : 20px auto;
+	background-color: yellow;
+	text-align: center;
+	border-radius: 10px;
+	padding: 8px;
+}
+
+/*----------------------이모티콘 구역--------------------------------------*/
+.dropdown .emobtn{
+	font-size: 25px;
+	background-color: transparent; /*투명색*/
+	border: none ; margin:  5px 20px;
+}
+.dropdown .emolistbox{
+	width:  300px; height: 300px;
+	overflow-y: scroll;
+}
+
+.dropdown .emolistbox img{
+	width: 70px;
+}
+
+/*---------------------- 지도 관련--------------------------------------*/
+#map {
+	position: relative; /* 부모 요소로부터 상대 위치 설정 */
+}
+
+.chartbtn{
+	z-index: 5;
+    position: absolute;
+    right: 10px;
+    top: 152px;
+}
+#postWrap {
+	border-radius: 5px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background-color: white;
+	padding: 10px;
+	border: 1px solid #ccc;
+	z-index: 2; /* 리스트는 지도 위에 표시되도록 설정 */
+	display: none;
+	height: 95%;
+	width: 350px;
+	
+}
+.postInfo
+{	
+	height: 250px;
+    width: 350px;
+	right: 56px;
+    top: 64px;
+    position: relative;
+	z-index: 4;
+	background-color: #A3D6EB !important;
+	padding: 20px;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+.postinfoheadder{
+	display: flex;
+	background-color: white;
+    border-radius: 5px;
+   
+	
+}
+.postSelect
+{
+	margin: 0px 10px;
+}
+.posttop
+{
+	display: flex;
+	justify-content:space-between;
+	padding-bottom: 10px;
+	
+	border-bottom: 2px solid rgba(204, 204, 204, 0.7);
+	margin-bottom: 10px;
+	    
+}
+.chartSelect
+{
+	margin-right: 20px;
+}
+.chartDropDownBox
+{
+	width: 250px;
+	display: flex;
+	justify-content: space-between;
+}
+.postinfobtn{
+	position: absolute;
+    left: 90px;
+    top: 175px;
+}
+
+.s.bcontent{
+	max-height: 100px;
+	overflow: auto;
+}
+/* 제목 스타일 */
+.postInfo h3 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 0;
+  max-width: 100% !important;
+}
+
+/* 내용 스타일 */
+.postInfo p {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+	background-color: #A3D6EB !important;
+	padding: 20px;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+.infowindowbox{
+	/* background-color: white !important; */
+    position: relative !important;
+    /* right: 3px!important; */
+    /* top: -1px !important; */
+    width: 170px !important; 
+    height: 46px !important;
+    /* border-radius: 5px !important; */
+    /* border: solid 1px gray !important;*/
+}
+.infowindowboxbtn{
+	    width: 150px !important;
+    position: absolute !important;
+    left: 10px !important;
+    top: 6px !important; 
+    }
+/* 제목 스타일 */
+.postInfo h3 {
+	max-width: 150px;
+	overflow: hidden;
+  font-size: 24px;
+  color: #333;
+  margin-top: 0;
+}
+
+/* 내용 스타일 */
+.postInfo p {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+}
+
+/* 작성자 스타일 */
+.writer {
+	padding: 5px;
+	font-size: 12px;
+  cursor: pointer;
+  color: #007bff !important;
+}
+.postinfobottom{
+	position: relative;
+	display: flex;
+	font-size: 12px;
+	left: 73px;
+    top: -223px;
+}
+.postinfocontent{
+	margin-top: 5px;
+    padding: 5px;
+    height: 170px;
+	background-color: white;
+	border-radius: 5px;
+}
+/* 버튼 스타일 */
+.postInfo button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* 버튼 호버 스타일 */
+.postInfo button:hover {
+  background-color: #0056b3;
+}
+
+/* 버튼 스타일 */
+.postInfo button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* 버튼 호버 스타일 */
+.postInfo button:hover {
+  background-color: #0056b3;
+}
+
+
+/* 삭제 버튼 호버 스타일 */
+.postInfo button.deleteButton:hover {
+  background-color: #c82333;
+}
+
+/* 삭제 버튼 스타일 */
+.postInfo button.deleteButton {
+  background-color: #dc3545;
+}
+
+
+
+
+
+/* 게시글 관련 */
+.post {
+	max-height: 200px;
+	background-color: #f9f9f9;
+	border: 1px solid #ccc;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.postheadder{
+	display: flex;
+    justify-content: space-between;
+}
+.postbtn{
+	
+	margin-top: 10px;
+	text-align: center;
+	font-size: 12px;
+}
+.postbtnbtn{
+	border-radius: 6px;
+    padding: 5px;
+    border: NONE;
+    background: #007BFF;
+    color: white;
+}
+.postBox
+{	
+	width: 280px;
+	overflow-y: scroll;
+	height: 82%;
+	margin: 0 auto;
+	
+}
+.postBox::-webkit-scrollbar {
+  display: none;
+}
+.post h2 {
+	color: #333;
+	font-size: 24px;
+	    margin-bottom: 0px;
+}
+
+.post p {
+	color: #555;
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+.pageBtnList
+{    
+	display: flex;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    justify-content: center;
+}
+.name{margin : 5px 0px;}
+.page-item {
+    margin: 5px;
+}
+.page-item button {
+    background-color: #F6B788;
+    color: #fff;
+    border: none;
+    border-radius: 50%; /* 원 모양으로 만듭니다. */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.page-item button:hover {
+    background-color: #0056b3;
+}
+
+/* 통계 css  */
+#chatWrap{
+	border-radius: 5px;
+	width: 550px;height: 250px;
+	position: relative;
+	left :400px;
+	top:10px;
+	z-index:10;
+	background-color: white;
+	display:none;
+	padding: 20px 20px;
+}
+.chartCanvs
+{
+	height: 90%;
+	width: 90%;
+	margin: 0 auto;
+	
+}
+#btn-modal{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px; 
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;	
+}
+.info-title2 {
+    display: block;
+    background: #50627F;
+    color: #fff;
+    text-align: center;
+    height: 24px;
+    line-height:22px;
+    border-radius:4px;
+    padding:0px 10px;
+}
+#btn-modal:hover {
+	background-color: #0056b3;
+}
+
+.post p {
+	overflow-wrap: break-word;
+}
+
+.close-chart{
+    right: 3%;
+    position: absolute;
+    top: 2%;
+    font-size: 19px;
+}
+.postChart
+{
+	margin: 0 auto;
+}
+#infotestmoadl
+{
+	display: none;
+}
+.postWrapTitle
+{
+	text-align: center;
+	margin-bottom: 5px;
+}

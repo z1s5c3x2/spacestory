@@ -1,0 +1,274 @@
+/* 기존 CSS */
+
+/* 내정보보기 페이지 CSS */
+/* 전체 페이지 컨테이너 */
+.webcontainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.writtencontent{
+	border-radius: 5px;
+	border: solid 1px gray;
+    margin-top: 10px;
+    padding: 10px;
+    max-height: 140px;
+    font-size: 20px;
+    overflow: hidden;  		
+ 	text-overflow: ellipsis;   
+ 	white-space: nowrap; 		
+}
+.writtenposttop{
+	font-size: 20px;
+	font-weight: bold;
+}
+.writtencontentbtmn{
+	display: flex;
+    justify-content: space-between;
+}
+.writtencontentbtitle{
+	text-align: center;
+	font-weight: bold;
+}
+.writtencontentmnickname{
+	font-size: 15px;
+}
+.writtencontentbdcn{
+	display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.reviewcontent{
+	border-radius: 5px;
+	border: solid 1px gray;
+    margin-top: 10px;
+    padding: 10px;
+    max-height: 140px;
+    font-size: 20px;
+    overflow: hidden;  		
+ 	text-overflow: ellipsis;   
+ 	white-space: nowrap; 
+}
+.reviewposttop{
+	justify-content: space-between;
+	display: flex;
+	font-weight: bold;
+	font-size: 20px;
+}
+.reviewcontentrsrs{
+	display: flex;
+	justify-content: space-between;
+}
+.reviewcontentrsender{
+	text-align: center;
+	font-weight: bold;
+}
+.reviewcontentrscore{
+	font-size: 20px;
+	color: yellow;
+	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.reviewcontentrdate{
+	font-size: 15px;
+}
+.nicknameandbtn{
+	display:flex;
+	justify-content: space-between;
+}
+.errorMessage{
+	font-size: 30px;
+	font-weight: bold;
+}
+/* 검색 바 섹션 */
+.searchbox {
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.offcanvas{--bs-offcanvas-width: 1000px !important;}
+/* 검색 결과 섹션 */
+.searchresultbox {
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* 검색 결과 왼쪽 섹션 (게시물) */
+.writtenpost {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* 검색 결과 오른쪽 섹션 (리뷰) */
+.reviewbox {
+	margin-left: 10px;
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* 페이지네이션 스타일링 (페이지번호) */
+.pagebox {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* 내정보보기 페이지 추가 CSS */
+
+/* 내 정보 섹션 */
+.myinfo {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 스타일링 내 아이디, 내 이메일, 변경할 닉네임 등 */
+.intitle {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.mid,
+.memail,
+.mnickname,
+.mnickname2,
+.mpwd,
+.newmnickname,
+.mpwdconfirm {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* 스타일링 수정, 탈퇴 버튼 */
+.signupbtn {
+	left: 260px;
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 스타일링 검색 바 섹션 */
+.searchbox {
+	border-top:1px solid black;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seachbar1 {
+	width: 500px;
+	margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.searchbar {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* 스타일링 검색 결과 섹션 */
+.resultbox {
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.writereview{
+	display: flex;
+	height: 1100px;
+}
+/* 페이지네이션 스타일링 (페이지번호) */
+.pagebox{
+   	bottom: 10px;
+    width: 100%;
+    position: absolute;
+    margin-top: 10px;
+    text-align: center;
+}
+.reviewpagebox {
+	 	bottom: 10px;
+    width: 100%;
+    position: absolute;
+    margin-top: 10px;
+    text-align: center;
+}
+.pagebox button,
+.reviewpagebox button {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 현재 선택된 페이지 스타일 */
+.pagebox button.selectpage,
+.reviewpagebox button.selectpage {
+    background-color: #555;
+}
+
+/* 추가된 스타일링 내용 */
+
+/* 스타일링 검색 바 섹션 */
+.searchbar {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* 스타일링 검색 결과 왼쪽 섹션 (게시물) */
+.writtenpost,
+.reviewbox {
+	position: relative;
+	height: 845px;
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* 페이지네이션 스타일링 (페이지번호) */
+.pagebox button,
+.reviewpagebox button {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 현재 선택된 페이지 스타일 */
+.pagebox button.selectpage,
+.reviewpagebox button.selectpage {
+    background-color: #555;
+}

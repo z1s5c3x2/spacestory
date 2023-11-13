@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/* 전체 페이지의 너비를 1100px로 제한 */
+.container {
+    max-width: 1100px;
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+/* CSS 스타일링은 프로젝트에 맞게 조정할 수 있습니다. */
+.container {
+    
+    background-color: #ffffff;
+  	width: 1100px;
+  	height: 500px;
+ 	margin-top:150px;
+ 	padding: 20px;
+  	border: 1px solid #ddd;
+  	border-radius: 5px;
+  	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.idpw{
+	 margin-top: 30px;
+	display: flex;
+   	justify-content: space-around;
+    align-items: center;
+    }
+.section {
+	width: 400px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid gray;
+}
+.loginsign{
+	margin-top: 50px;
+    margin-left: 450px;
+}
+input {
+    margin: 10px;
+    padding: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#foundId, #foundPwd {
+    font-weight: bold;
+    color: green;
+}
